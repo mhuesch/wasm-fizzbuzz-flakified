@@ -1,0 +1,6 @@
+== building
+
+[source]
+----
+cargo2nix
+----
