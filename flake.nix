@@ -22,7 +22,9 @@
           buildInputs = [
             wasm
             wabt
-            rust-bin.stable."1.61.0".default
+            (rust-bin.stable."1.61.0".default.override {
+              targets = [ "wasm32-unknown-unknown" ];
+            })
             cargo2nix.packages.${system}.default
           ];
         };
